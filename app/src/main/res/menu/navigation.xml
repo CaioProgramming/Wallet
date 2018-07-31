@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_payment_method"
+        android:title="Novo gasto" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dollar_analysis_bars_chart"
+        android:title="Histórico" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_coins_money_stack"
+        android:title="Carteira" />
+
+    <item
+        android:id="@+id/guardar"
+        android:icon="@drawable/ic_piggy_bank_with_dollar_coins"
+        android:title="Guardar dinheiro" />
+
+</menu>

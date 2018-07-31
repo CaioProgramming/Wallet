@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:padding="25dp"
+    android:background="@drawable/grad">
+
+    <com.vicmikhailau.maskededittext.MaskedEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        app:mask="R$ ######,##"
+        android:hint="Insira quanto dinheiro possui"
+        android:background="@color/transparent"
+        android:drawableStart="@drawable/ic_attach_money_black_24dp"
+        android:textColor="@color/white"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:text="Concluir"
+        android:background="@drawable/button1"
+        android:textColor="@color/md_green_400"
+
+        />
+
+
+
+
+
+
+</FrameLayout>

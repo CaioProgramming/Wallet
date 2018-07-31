@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:padding="45dp"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       
+       
+       <com.vicmikhailau.maskededittext.MaskedEditText
+           android:id="@+id/moneytxt"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="numberDecimal"
+           android:layout_gravity="center"
+           android:drawableStart="@drawable/ic_attach_money_black_24dp"
+           android:textColor="@color/white"
+           android:hint="Deposite dinheiro"
+           android:textSize="25dp"
+           android:typeface="sans"
+           android:textAlignment="center"
+           android:background="@drawable/round"
+           app:mask="R$ #####,##"
+           />
+       <Button
+           android:layout_marginTop="5dp"
+           android:id="@+id/addmoneybtn"
+           android:background="@drawable/button1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="Concluir"
+           android:textColor="@color/green_500"
+
+           />
+   </LinearLayout>
+
+</FrameLayout>

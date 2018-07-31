@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AlertDialogLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <ImageView
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_green_400"
+            android:src="@drawable/ic_attach_money_black_24dp"
+            android:id="@+id/img"
+            android:tint="@color/white"
+
+            />
+        <com.vicmikhailau.maskededittext.MaskedEditText
+            android:layout_below="@id/img"
+            android:padding="5dp"
+            android:background="@color/transparent"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColorHint="@color/lblack"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:hint="Valor a depositar"
+            android:inputType="numberDecimal"
+            app:mask="R$ #####,##"
+            android:id="@+id/money1"
+            />
+        <Button
+            android:id="@+id/itembtn"
+            android:textColor="@color/green_500"
+            android:foregroundTint="@color/black"
+            android:clickable="true"
+            android:longClickable="true"
+            android:drawableTint="@color/md_red_A700"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Depositar"
+            android:background="@color/transparent"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.AlertDialogLayout>

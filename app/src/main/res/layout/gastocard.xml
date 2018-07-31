@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minWidth="250dp"
+    app:cardCornerRadius="5dp"
+    android:id="@+id/gastocard"
+    android:minHeight="100dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="datetime"
+    android:id="@+id/dategasto"
+
+    />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemgasto"
+            android:textColor="@color/black"
+            android:text="item"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            />
+        <TextView
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dinheirogasto"
+            android:textColor="@color/red_500"
+            android:text="- R$ 00,00"
+            android:textSize="25dp"
+            android:layout_gravity="bottom|end"
+            />
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

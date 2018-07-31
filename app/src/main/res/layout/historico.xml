@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/historico"
+    android:paddingTop="25dp"
+    android:background="@drawable/grad"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/linechart"
+            android:foregroundTint="@color/md_green_400"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclergasto"
+            android:padding="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/empty"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vá fazer compras"
+            android:textSize="42dp"
+            android:textAlignment="center"
+
+            />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>
